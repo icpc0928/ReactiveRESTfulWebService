@@ -20,7 +20,7 @@ import static org.springframework.web.reactive.function.server.RequestPredicates
  * Spring Boot在2.2.0版本（依赖于Spring 5.2.0）起就把它的所有的自动配置类的此属性改为了false，即@Configuration(proxyBeanMethods = false)，提高Spring启动速度
  */
 @Configuration(proxyBeanMethods = false)
-public class Router {
+public class MainRouter {
 
     //route監聽 /hello 路徑上的流量並返回我們的反應處理程序類提供的值
     //The router listens for traffic on the /hello path and returns the value provided by our reactive handler class.
