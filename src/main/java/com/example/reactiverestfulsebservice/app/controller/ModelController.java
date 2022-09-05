@@ -23,8 +23,7 @@ public class ModelController {
     //127.0.0.1:8080/controller/summer    body: {"a":10,"b":4}
     @PostMapping("/summer")
     public Object getSumByPosting(@RequestBody TwoNumbers twoNumbers){
-        int result = twoNumbers.getA() + twoNumbers.getB();
-        Summer summer = new Summer(String.valueOf(result));
+        Summer summer = new Summer(twoNumbers.getA(), twoNumbers.getB());
         return summer;
     }
 

@@ -8,6 +8,10 @@ public class Summer {
         this.result = result;
     }
 
+    public Summer(int a, int b){
+        this.result = String.valueOf((a + b));
+    }
+
     public Summer() {
     }
 
